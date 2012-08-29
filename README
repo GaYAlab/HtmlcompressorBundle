@@ -1,0 +1,56 @@
+Getting Started With HtmlCompressorBundle
+=====================================
+
+## Prerequisites
+
+This version of the bundle requires Symfony 2.0.x
+
+
+### Vendor Mode (Symfony 2.0.x)
+
+Add the following lines in your deps file:
+
+```
+[GayaHtmlCompresso]
+    git=git://github.com/GaYAlab/HtmlCompressorBundle.git
+    target=bundles/Gaya/Bundle/HtmlCompressorBundle
+
+```
+
+Then run the vendor script:
+
+```./bin/vendors install```
+
+## Configuration
+
+Add the "Gaya" namespace to your autoloader (for Symfony 2.0)
+
+```
+// app/autoload.php
+$loader->registerNamespaces(array(
+'Gaya' => __DIR__.'/../vendor/gayalab',
+// your other namespaces
+));
+```
+
+Register Bundle in kernel file:
+
+```
+// app/ApplicationKernel.php
+public function registerBundles()
+{
+  return array(
+  // ...
+  new Gaya\Bundle\HtmlCompressorBundle(),
+  // ...
+  );
+}
+```
+
+=====================================
+
+DONE!
+
+you can customize settings:
+
+gaya.compressor.enabled: true or false 
