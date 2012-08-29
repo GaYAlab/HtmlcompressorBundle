@@ -11,7 +11,7 @@ This version of the bundle requires Symfony 2.0.x
 Add the following lines in your deps file:
 
 ```
-[GayaHtmlCompresso]
+[GayaHtmlCompressor]
     git=git://github.com/GaYAlab/HtmlCompressorBundle.git
     target=bundles/Gaya/Bundle/HtmlCompressorBundle
 
@@ -51,6 +51,6 @@ public function registerBundles()
 
 DONE!
 
-you can customize settings:
+you can customize settings in your config.yml file
 
 gaya.compressor.enabled: true or false 
