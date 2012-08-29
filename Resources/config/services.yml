@@ -1,0 +1,13 @@
+parameters:
+  gaya.htmlcompressor.enabled: false
+  gaya.htmlcompressor.class: Gaya\Bundle\HtmlCompressBundle\Helper\Compressor
+  
+services:
+  gaya.htmlcompressor:
+    class: %gaya.htmlcompressor.class%
+  
+  gaya.htmlcompressor.listener:
+    class: Gaya\Bundle\HtmlCompressBundle\EventListener\CompressorListener
+    arguments: [ @gaya.htmlcompressor, %gaya.htmlcompressor.enabled% ]
+    tags: 
+       -   { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
