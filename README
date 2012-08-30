@@ -54,3 +54,32 @@ DONE!
 you can customize settings in your config.yml file
 
 gaya.compressor.enabled: true or false 
+
+
+====================================
+
+KNOW BUGS
+
+1. inline javascript comments 
+```
+<script>
+  // my comment 
+alert("foo");
+</script>
+```
+returns:
+```
+<script>  // my comment alert("foo"); </script>
+```
+
+2. <textarea> tags
+htmlcompressor remove all "\n" 
+
+<textarea>foo
+bar </textarea>
+
+<textarea>foo bar</textarea>
+
+
+3. <pre> tags
+Like textarea htmlcompressor will remove all lines, tabs and double spaces. 
