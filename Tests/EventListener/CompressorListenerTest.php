@@ -1,50 +1,18 @@
 <?php 
 
-namespace Gaya\Bundle\HtmlCompressBundle\Helper;
-use Gaya\Bundle\HtmlCompressBundle\Interfaces\CompressorInterface;
+namespace Gaya\Bundle\HtmlCompressorBundle\Tests\EventListener;
 
-class Compressor implements CompressorInterface {
+/**
+ * @todo
+ */
+class CompressorListenerTest extends \PHPUnit_Framework_TestCase {
 
-  protected $buffer;
-
-  /**
-   * Compress html output
-   * @return string
-   */
-  public function compress() {
-    
-    $search = array(
-        '/\>[^\S ]+/s', //strip whitespaces after tags, except space
-        '/[^\S ]+\</s', //strip whitespaces before tags, except space
-        '/(\s)+/s'  // shorten multiple whitespace sequences
-        );
-    
-    $replace = array(
-        '>',
-        '<',
-        '\\1'
-        );
-    $this->setBuffer(preg_replace($search, $replace, $this->getBuffer()));
-  }
-  
-  public function render() {
-    $this->compress();    
-    return $this->getBuffer();
-  }
-  /**
-   * 
-   * @return string
-   */
-  public function getBuffer() {
-    return $this->buffer;
-  }
-
-  /**
-   * 
-   * @param string $buffer
-   */
-  public function setBuffer($buffer) {
-    $this->buffer = $buffer;
-  }
  
+    /**
+     * @todo creare il client che va a leggere una pagina e testare se la pagina
+     * ritornata sia uguale alla stringa che ci si aspetta che deve ritronare
+     */
+    function testOnKernelResponse(){        
+                $this->assertTrue(true);
+    }
 }

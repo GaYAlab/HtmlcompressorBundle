@@ -1,6 +1,6 @@
 <?php 
 
-namespace Gaya\Bundle\HtmlCompressBundle\Interfaces;
+namespace Gaya\Bundle\HtmlcompressorBundle\Interfaces;
 
 interface CompressorInterface {
 

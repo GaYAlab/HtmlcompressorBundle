@@ -1,6 +1,6 @@
 <?php
 
-namespace Gaya\Bundle\HtmlCompressBundle\DependencyInjection;
+namespace Gaya\Bundle\HtmlcompressorBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('gaya_html_compress');
+        $rootNode = $treeBuilder->root('gaya_htmlcompressor');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

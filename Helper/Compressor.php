@@ -1,7 +1,7 @@
 <?php 
 
-namespace Gaya\Bundle\HtmlCompressBundle\Helper;
-use Gaya\Bundle\HtmlCompressBundle\Interfaces\CompressorInterface;
+namespace Gaya\Bundle\HtmlcompressorBundle\Helper;
+use Gaya\Bundle\HtmlcompressorBundle\Interfaces\CompressorInterface;
 
 class Compressor implements CompressorInterface {
 

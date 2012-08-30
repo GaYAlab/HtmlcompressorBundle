@@ -1,7 +1,7 @@
 <?php 
 
-namespace Gaya\Bundle\HtmlCompressBundle\Tests\Helper;
-use Gaya\Bundle\HtmlCompressBundle\Helper\Compressor;
+namespace Gaya\Bundle\HtmlCompressorBundle\Tests\Helper;
+use Gaya\Bundle\HtmlCompressorBundle\Helper\Compressor;
 
 class CompressorTest extends \PHPUnit_Framework_TestCase {
 
