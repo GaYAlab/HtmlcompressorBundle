@@ -1,4 +1,4 @@
-Getting Started With HtmlCompressorBundle
+Getting Started With HtmlcompressorBundle
 =====================================
 
 ## Prerequisites
@@ -11,9 +11,9 @@ This version of the bundle requires Symfony 2.0.x
 Add the following lines in your deps file:
 
 ```
-[GayaHtmlCompressor]
-    git=git://github.com/GaYAlab/HtmlCompressorBundle.git
-    target=bundles/Gaya/Bundle/HtmlCompressorBundle
+[GayaHtmlcompressor]
+    git=git://github.com/GaYAlab/HtmlcompressorBundle.git
+    target=bundles/Gaya/Bundle/HtmlcompressorBundle
 
 ```
 
@@ -41,7 +41,7 @@ public function registerBundles()
 {
   return array(
   // ...
-  new Gaya\Bundle\HtmlCompressorBundle(),
+  new Gaya\Bundle\HtmlcompressorBundle(),
   // ...
   );
 }
